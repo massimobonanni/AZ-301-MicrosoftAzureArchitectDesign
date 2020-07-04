@@ -187,7 +187,7 @@
     }
     ```
 
-1. At the **Cloud Shell** command prompt, type in the following command and press **Enter** to create a variable which value designates the name of the resource group that will contain the hub virtual network:
+1. At the **Cloud Shell** command prompt, type in the following command and press **Enter** to create a variable which value designates the name of the resource group that will contain the virtual virtual machine:
 
     ```sh
     RESOURCE_GROUP='AADesignLab1202-RG'
