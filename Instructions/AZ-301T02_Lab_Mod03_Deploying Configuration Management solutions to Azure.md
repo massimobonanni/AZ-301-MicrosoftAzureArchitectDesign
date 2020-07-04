@@ -212,7 +212,7 @@
 1. At the **Cloud Shell** command prompt, type in the following command and press **Enter** to deploy the Azure Resource Manager template with the specified parameters file:
 
     ```sh
-    az group deployment create --resource-group $RESOURCE_GROUP --template-file ~/linux-template.json --parameters password=Pa55w.rd1234
+    az deployment group create --resource-group $RESOURCE_GROUP --template-file ~/linux-template.json --parameters password=Pa55w.rd1234
     ```
 
 1. Do not wait for the deployment to complete before you proceed to the next task.
@@ -256,9 +256,9 @@
 
 1. On the **AADesignLab1203-RG** blade, click the newly created Azure Automation account.
 
-1. On the **LinuxAutomation** blade, in the **SHARED RESOURCES** section on the left side of the blade, click **Modules gallery**.
+1. On the **LinuxAutomation** blade, in the **Shared Resources** section on the left side of the blade, click **Modules gallery**.
 
-1. On the **LinuxAutomation - Modules gallery** blade, perform the following tasks:
+1. On the **LinuxAutomation | Modules gallery** blade, perform the following tasks:
 
     - In the **Search** text box, type **nx** and press **Enter**.
 
@@ -278,9 +278,9 @@
 
 1. Back on the **LinuxAutomation** blade, in the **Configuration Management** section, click **State configuration (DSC)**.
 
-1. On the **LinuxAutomation - State configuration (DSC)** blade, click the **Configurations** link.
+1. On the **LinuxAutomation | State configuration (DSC)** blade, click the **Configurations** tab.
 
-1. On the **LinuxAutomation - State configuration (DSC)** blade, click the **+ Add** button at the top of the pane.
+1. On the **LinuxAutomation | State configuration (DSC)** blade, click the **+ Add** button at the top of the pane.
 
 1. On the **Import** blade, perform the following tasks:
 
@@ -302,7 +302,7 @@
 
 1. On the **lampserver Configuration** blade, click the **Compile** button at the top of the blade. In the confirmation dialog box, click **Yes** to proceed with compiling the configuration.
 
-1. Wait for the compilation task to finish. To determine the status of the compilation task, review the **STATUS** column of the **Compilation jobs** section of the **lampserver Configuration** blade.
+1. Wait for the compilation task to finish. To determine the status of the compilation task, review the **Status** column of the **Compilation jobs** section of the **lampserver Configuration** blade.
 
     > **Note**: You may need to close and re-open the blade to see the latest compilation status. This blade does not refresh automatically.
 
@@ -310,9 +310,9 @@
 
 1. Navigate back to the **LinuxAutomation - State Configuration (DSC)** blade.
 
-1. Back on the **LinuxAutomation - State Configuration (DSC)** blade, click the **Nodes** link.
+1. Back on the **LinuxAutomation | State Configuration (DSC)** blade, click the **Nodes** tab.
 
-1. On the **LinuxAutomation - State configuration (DSC)** blade, click the **+ Add** button at the top of the pane.
+1. On the **LinuxAutomation | State configuration (DSC)** blade, click the **+ Add** button at the top of the pane.
 
 1. On the **Virtual Machines** blade, click the entry representing the Linux virtual machine you deployed in the previous exercise.
 
@@ -330,9 +330,9 @@
 
 1. Wait for the connection process to complete before you proceed to the next step.
 
-1. Navigate back to the **LinuxAutomation - State Configuration (DSC)** blade.
+1. Navigate back to the **LinuxAutomation | State Configuration (DSC)** blade.
 
-1. On the **LinuxAutomation - State configuration (DSC)** blade, select in the **NODE** section the virtual machine you deployed in the previous exercise.
+1. On the **LinuxAutomation | State configuration (DSC)** blade, select in the **NODE** section the virtual machine you deployed in the previous exercise.
 
     > **Note**: You may need to refresh the blade.
 
@@ -340,7 +340,7 @@
 
 1. On the Assign Node Configuration blade, select the node configuration **lampserver.host** and click the **OK** button.
 
-1. Back on the **LinuxAutomation - State Configuration (DSC)** blade, click the **Refresh** button.
+1. Back on the **LinuxAutomation | State Configuration (DSC)** blade, click the **Refresh** button.
 
 1. In the list of DSC nodes, verify that the Linux virtual machine has the **Compliant** status.
 
