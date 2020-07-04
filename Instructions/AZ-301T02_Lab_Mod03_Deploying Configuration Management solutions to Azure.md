@@ -176,15 +176,15 @@
                 },
                 "networkProfile": {
                     "networkInterfaces": [
-                        {
+                           {
                             "id": "[resourceId('Microsoft.Network/networkInterfaces', variables('nicName'))]"
-                        }
-                    ]
-                }
-            }
-        }
-    ]
-}
+                           }
+                       ]
+                   }
+               }
+           }
+       ]
+    }
     ```
 
 1. At the **Cloud Shell** command prompt, type in the following command and press **Enter** to create a variable which value designates the name of the resource group that will contain the hub virtual network:
