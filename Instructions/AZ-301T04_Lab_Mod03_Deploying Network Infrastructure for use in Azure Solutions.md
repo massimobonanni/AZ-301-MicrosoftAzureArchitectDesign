@@ -120,16 +120,16 @@
 
 #### Task 3: Install the Azure Building Blocks npm package in the Azure VM running Linux.
 
-1. Within the SSH session to the Azure VM **lab08vm1**, run the following to update locally installed packages and their dependencies:
-
-    ```sh
-    sudo apt-get upgrade
-    ```
-
-1. Within the SSH session to the Azure VM **lab08vm1**, run the following to ensure that there are no remaining updates to be processed:
+1. Within the SSH session to the Azure VM **lab08vm1**, run the following to update the list of available packages and their versions:
 
     ```sh
     sudo -i apt update
+    ```
+    
+1. Within the SSH session to the Azure VM **lab08vm1**, run the following to install updated versions of locally installed packages and their dependencies:
+
+    ```sh
+    sudo apt-get upgrade
     ```
 
 1. Within the SSH session to the Azure VM **lab08vm1**, run the following to install Azure CLI: 
