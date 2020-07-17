@@ -214,7 +214,7 @@
 1. At the **Cloud Shell** command prompt, type in the following command and press **Enter** to deploy the GitHub-resident web app code by using a local Azure Resource Manager template and a local parameters file:
 
     ```sh
-    az group deployment create --resource-group $RESOURCE_GROUP_APP --template-file github.json --parameters webAppName=webapp05022$RANDOM$RANDOM --parameters repositoryUrl=https://github.com/Azure-Samples/nodejs-docs-hello-world --parameters branch=master
+    az group deployment create --resource-group $RESOURCE_GROUP_APP --template-file github.json --parameters webAppName=$WEBAPPNAME2 --parameters repositoryUrl=https://github.com/Azure-Samples/nodejs-docs-hello-world --parameters branch=master
     ```
 
 1. Wait for the deployment to complete before you proceed to the next task.
